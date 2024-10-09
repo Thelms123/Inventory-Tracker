@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 20px;
+    background-color: #fff;
+}
+
+.form-container {
+    font-family: 'Nova Square';
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+h1 {
+    position: relative;
+    font-size: 55px;
+    bottom: 50px;
+    text-align: center;
+    color: #333;
+}
+
+img {
+    position: relative;
+    top: 40px;
+    width: 200px;
+    margin: 20px 0;
+}
+
+#productName, #productQuantity, #productPrice, #productDescription {
+    color: #333;
+}
+
+input, button {
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-family: 'Nova Square';
+    font-size: 15px;
+}
+
+button {
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+#inventoryTable {
+    font-family: 'Nova Square';
+    text-align: center;
+}
+
+table {
+    margin: 25px auto;
+    border-collapse: collapse;
+    width: 100%; /* Make table full width */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 19px;
+}
+
+td button {
+    margin-right: 25px;
+}
+
+tbody {
+    font-family: 'Nova Square';
+}
+
+#total {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1400px) {
+    th {
+        font-size: 17px;
+    }
+    td button {
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 1149px) {
+    .form-container {
+        max-width: 95%; /* Adjusted for better responsiveness */
+        gap: 10px;
+        padding: 20px;
+    }
+    input {
+        padding: 14px 8px;
+        width: 45%; /* Make inputs responsive */
+        margin: 4px 2%; /* Space between inputs */
+    }
+}
+
+@media only screen and (max-width: 962px) {
+    .form-container {
+        flex-direction: column; /* Stack vertically */
+        max-width: 100%;
+    }
+
+    input {
+        padding: 15px;
+        width: 300px; /* Make inputs take most of the width */
+        margin: 5px 0; /* Vertical spacing only */
+    }
+    td button {
+        text-align: center;
+        padding: 18px;
+        margin: 8px; /* Adjust margin for buttons */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 40px; /* Smaller font for mobile */
+    }
+
+    #total {
+        font-size: 20px; /* Smaller total font */
+    }
+
+    button {
+        width: 100%; /* Full width for buttons */
+        padding: 12px; /* Less padding for smaller screens */
+    }
+
+    th, td {
+        padding: 8px; /* Less padding in table cells */
+    }
+}

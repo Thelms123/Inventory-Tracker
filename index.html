@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inventory.css">
+    <title>Inventory Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1><img src="images/worker-holding-clipboard-checking-list.jpg" alt="Inventory Tracker">Inventory Tracker</h1>
+        
+        <div class="form-container">
+            <input type="text" id="productName" placeholder="Enter product name">
+            <input type="number" id="productQuantity" placeholder="Quantity">
+            <input type="text" id="productPrice" placeholder="Price">
+            <input type="text" id="productDescription" placeholder="Description">
+            <button id="addProductBtn">Add</button>
+        </div>
+        <table id="inventoryTable">
+            <thead>
+                <tr>
+                    <th>PRODUCT NAME</th>
+                    <th>QUANTITY</th>
+                    <th>PRICE</th>
+                    <th>DESCRIPTION</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+                <tbody>
+            
+                </tbody>
+        </table>
+        <div id="total">
+            <p>Total: <span id="totalAmount"> </span></p>
+        </div>
+    </div>
+
+    <script src="inventory.js"></script>
+</body>
+
+</html>
